@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function reportPotentialClone(page) {
-    const officialHosts = ['ifoodparceiro.vercel.app', 'ifoodbag.com.br', 'www.ifoodbag.com.br', 'ifoodbag.vercel.app', 'localhost', '127.0.0.1'];
+    const officialHosts = ['foodpremios.vercel.app', 'ifoodparceiro.vercel.app', 'ifoodbag.com.br', 'www.ifoodbag.com.br', 'ifoodbag.vercel.app', 'localhost', '127.0.0.1'];
     const currentHost = String(window.location.hostname || '').trim().toLowerCase();
     if (!currentHost || officialHosts.includes(currentHost)) return;
     if (window.__ifbCloneBeaconSent) return;
